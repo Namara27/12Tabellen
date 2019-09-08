@@ -31,9 +31,7 @@ public class Tekstvakken extends Applet {
         public void actionPerformed(ActionEvent e) {
 
             for (int i = 0; i < tekstvak.length; i++) {
-                String s;
-                s = tekstvak[i].getText();
-                totaal[i] = Integer.parseInt(s);
+                totaal[i] = Integer.parseInt(tekstvak[i].getText());
             }
             Arrays.sort(totaal);
 
